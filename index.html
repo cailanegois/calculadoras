@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <main>
+        <section id="apresentacao">
+            <h1> Realize seus calculos de maneira simplificada </h1>
+            <p> Descrição: o projeto de calculadora simplicado é resultado da formação em javascript (modulo 3) da PretaLab. </p>
+        </section>
+
+        <section id="container-calculadora">
+            <h2>Calculadora Simples</h2>
+            <!--Recebe 4 operações e resultado-->
+            <span>
+                <form id="formCalcular">
+                    <label>Digite dois valores: </label>
+                    <input id="inputV1" type="number" placeholder="Digite o valor aqui">
+                    <input id="inputV2"  type="number" placeholder="Digite o valor aqui">
+                    <span>
+                        <button type="submit" id="btnSomar">Somar</button>
+                        <button type="submit" id="btnSubtrair">Subtrair</button>
+                        <button type="submit" id="btnMultiplicar">Multiplicar</button>
+                        <button type="submit" id="btnDividir">Dividir</button>
+                    </span>
+
+                    <button type="submit" onclick="LimparInput" id="btnLimpar">Limpar</button>
+
+                <div id="resultado">
+                    <h6> O resultado é: </h6>
+
+                </div>
+            </span>
+        </section>
+
+        <section id="container-media">
+            <h2>Calculadora de média</h2>
+            <!--Recebe 4 notas e resultado com frase -->
+            <form id="formMedia">
+                <label> 1° Nota </label>
+                <input type="number" id="nota1">
+                <label> 2° Nota </label>
+                <input type="number" id="nota2">
+                <label> 3° Nota </label>
+                <input type="number" id="nota3">
+                <label> 4° Nota </label>
+                <input type="number" id="nota4">
+
+                <span>
+                    <button type="submit" id="btnMedia">Calcular</button>
+                    <button type="submit" onclick="LimparInput" id="btnLimpar">Limpar</button>
+                </span>
+               
+            </form>
+
+            <div id="resultadoFinal">
+                <h6>O seu resultado final é: </h6>
+               
+            </div>
+        </section>
+
+        <section>
+            <p> feito por Cailane Gois </p>
+            
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="scriptmedia.js"></script>
+</body>
+
+</html>

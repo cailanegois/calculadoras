@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+body {
+    background-color: rgb(66, 36, 95);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 40px;
+    border-bottom: 1px solid #362c81;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #362c81;
+   
+}
+
+p, h6 {
+    text-align: justify;
+    font-size: 0.85rem;
+    margin: 25px 0;
+}
+
+label,
+input,
+button {
+    font-size: 0.85rem;
+}
+
+
+
+input {
+    width: 150px;
+    margin: 10px 0;
+}
+
+
+button {
+    padding: 3px;
+    background-color: #fff;
+    border: 2px solid #362c81;
+    border-radius: 5px;
+    width: 85px;
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #362c81;
+    color: #fff;
+    cursor: pointer;
+      
+}
+
+/* estilos próprios dos botões de limpar*/
+
+#formCalcular > #btnLimpar {
+    margin-top: 20px;
+    background-color: #232226;
+    border: 2px solid #232226;
+    color:#fff;
+}
+
+#btnLimpar {
+    background-color: #232226;
+    border: 2px solid #232226;
+    color:#fff;
+  
+}
+
+#btnLimpar:hover, #formCalcular > #btnLimpar:hover {
+    background-color: #675fa0;
+    border: 2px solid #362c81;
+    color:#fff;
+    transition: 1s;
+}
