@@ -38,7 +38,6 @@ btnSubtrair.addEventListener('click', Subtrair = (e) => {
 btnDividir.addEventListener('click', Dividir = (e) => {
     e.preventDefault()
 
-
     const divisao = (Number(input1.value) / Number(input2.value)).toFixed(2)
 
     let resultadoCalc = document.createElement('p')
@@ -61,8 +60,8 @@ btnMultiplicar.addEventListener('click', Multiplicar = (e) => {
 })
 
 
-LimparInput = () => {
-
+LimparInput = (e) => {
+    
     const input = document.querySelectorAll('input')
     input.values = ""
 }
