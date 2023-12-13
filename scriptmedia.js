@@ -19,7 +19,7 @@ btnCalcularMedia.addEventListener('click', calcularMedia = (e) => {
 
     if (media <= 5) {
         mensagem = `Sua média é ${media}, infelizmente esse resultado é inferior a media para aprovação.`
-    } else if (media === 6) {
+    } else if (media === 6 || media <=8) {
         mensagem = `Sua média é ${media}, parabéns pelo resultado. Se dedique, você está no caminho certo!`
     } else  if (media >= 8) {
         mensagem = `Sua média é ${media}, parabéns pelo resultado. Que notão!!!`
