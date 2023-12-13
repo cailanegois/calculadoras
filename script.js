@@ -8,19 +8,17 @@ const btnMultiplicar = document.querySelector('#btnMultiplicar')
 const btnDividir = document.querySelector('#btnDividir')
 const resultado = document.querySelector('#resultado')
 
+//criação do elemento filho fora do btn para na ação acontecer somente a atribuição do valor 
+
+let resultadoCalc = document.createElement('p')
+resultado.appendChild(resultadoCalc)
 
 
 btnSomar.addEventListener('click', Somar = (e) => {
     e.preventDefault()
 
     const soma = Number(input1.value) + Number(input2.value)
-
-    console.log(soma)
-
-    let resultadoCalc = document.createElement('p')
-    resultado.appendChild(resultadoCalc)
     resultadoCalc.innerHTML = `Somando  =  ${soma}`
-
 
 })
 
@@ -28,8 +26,6 @@ btnSubtrair.addEventListener('click', Subtrair = (e) => {
     e.preventDefault()
     const subtracao = Number(input1.value) - Number(input2.value)
 
-    let resultadoCalc = document.createElement('p')
-    resultado.appendChild(resultadoCalc)
     resultadoCalc.innerHTML = `Subtraindo = ${subtracao}`
 
 })
@@ -39,9 +35,6 @@ btnDividir.addEventListener('click', Dividir = (e) => {
     e.preventDefault()
 
     const divisao = (Number(input1.value) / Number(input2.value)).toFixed(2)
-
-    let resultadoCalc = document.createElement('p')
-    resultado.appendChild(resultadoCalc)
     resultadoCalc.innerHTML = `Dividindo = ${divisao}`
 
 })
@@ -51,9 +44,6 @@ btnDividir.addEventListener('click', Dividir = (e) => {
 btnMultiplicar.addEventListener('click', Multiplicar = (e) => {
     e.preventDefault()
     const multiplicacao = Number(input1.value) * Number(input2.value)
-
-    let resultadoCalc = document.createElement('p')
-    resultado.appendChild(resultadoCalc)
     resultadoCalc.innerHTML = `Multiplicando = ${multiplicacao}`
 
 })
