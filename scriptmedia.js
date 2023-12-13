@@ -7,7 +7,8 @@ btnCalcularMedia.addEventListener('click', calcularMedia = (e) => {
     const nota2 = parseFloat(document.querySelector("#nota2").value)
     const nota3 = parseFloat(document.querySelector("#nota3").value)
     const nota4 = parseFloat(document.querySelector("#nota4").value)
-    const resultadoFinal = document.querySelector('#resultadoFinal')
+   // const resultadoFinal = document.querySelector('#resultadoFinal')
+
     e.preventDefault()
 
     let media = ((nota1 + nota2 + nota3 + nota4) / 4).toFixed(2)
@@ -26,10 +27,7 @@ btnCalcularMedia.addEventListener('click', calcularMedia = (e) => {
         alert(`Digite suas notas!`)
     }
 
-    const resultado = document.createElement('p')
-    resultadoFinal.appendChild(resultado)
-    resultado.innerHTML = mensagem
-
+   document.querySelector("#mensagemSituacao").innerText = mensagem 
 })
 
 

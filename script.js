@@ -48,7 +48,6 @@ btnDividir.addEventListener('click', Dividir = (e) => {
 
 
 
-
 btnMultiplicar.addEventListener('click', Multiplicar = (e) => {
     e.preventDefault()
     const multiplicacao = Number(input1.value) * Number(input2.value)
@@ -68,9 +67,6 @@ LimparInput = (e) => {
 
 
 
-//ajustar o foco dos inputs + aparecer somente um resultado por vez
-//condicional para alertar - digite um numero
-//mudar o ponto por virgula
 
 
 
